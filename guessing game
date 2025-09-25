@@ -1,0 +1,19 @@
+import random
+print("Hello Worlds")
+name = input("what is your name? ")
+surname = input("what is your surname? ")
+print("hi "+ name +" "+ surname)
+decide = input("do you want to play a guessing game? yes/no ")
+if decide == "yes":
+  random_num = random.randint(0,100)
+  while True:
+    guess = int(input("guess a number between 1 and 100 "))
+    if guess < random_num:
+      print("your cold")
+    if guess > random_num:
+      print("your too hot")
+    if guess == random_num:
+        print("your correct congratulation")
+        break
+else :
+  print("Thanks for your consideration "+ name +" "+ surname)
